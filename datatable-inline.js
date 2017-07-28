@@ -112,7 +112,7 @@
             $(".dt-inline-btn-save").hide();
             $(".dt-inline-btn-cancel").hide();
             $(".dt-inline-btn-edit").prop('disabled', true);
-            $(".dt-inline-btn-remove").prop('disabled', true);
+            $(".dt-inline-btn-delete").prop('disabled', true);
 
             $(rowDom).find('.dt-inline-btn-save').show();
             $(rowDom).find('.dt-inline-btn-cancel').show();
@@ -123,7 +123,7 @@
             $(".dt-inline-btn-cancel").prop('disabled', false).hide();
 
             $(".dt-inline-btn-edit").prop('disabled', false);
-            $(".dt-inline-btn-remove").prop('disabled', false);
+            $(".dt-inline-btn-delete").prop('disabled', false);
             $(".dt-inline-btn-edit").show();
         }
 
@@ -137,7 +137,7 @@
                                         aria-label="Left Align"> \
                                     <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> \
                                 </button>';
-            domButtons += '<button type="button" class="btn btn-default pull-right dt-inline-btn-remove" \
+            domButtons += '<button type="button" class="btn btn-default pull-right dt-inline-btn-delete" \
                                     aria-label="Left Align"> \
                                 <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> \
                               </button>';
